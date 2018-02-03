@@ -29,7 +29,7 @@ pipeline {
   }
   post {
     always {
-      archiveArtifacts artifacts: '*.jar', fingerprint: true
+      archiveArtifacts artifacts: 'multi-module/server/target/*.jar', fingerprint: true
     }
   }
 }
